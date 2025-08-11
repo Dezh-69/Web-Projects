@@ -1,0 +1,80 @@
+.main-container {
+  display: grid;
+  column-gap: 60px;
+  grid-template-columns: 1fr 350px;
+  background-color: #2a9d8f;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 40px 40px;
+}
+
+nav {
+  background-color: #00796b;
+  padding: 15px 30px;
+}
+
+.nav-title {
+  font-size: 24px;
+  color: white;
+  /* font-style: italic; */
+  margin-bottom: 0;
+  text-align: start;
+}
+
+.exercise-img {
+  width: 500px;
+  border-radius: 7px;
+  grid-row: 1 / span 2;
+}
+
+.login-container {
+}
+
+.login-inputs {
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-choice-div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: end;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.student-btn,
+.teacher-btn {
+  border: 1px solid #264653;
+  background-color: #264653;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-btn {
+  border: 1px solid #264653;
+  background-color: white;
+  color: #264653;
+}
+
+.student-btn:hover,
+.teacher-btn:hover {
+  cursor: pointer;
+  background-color: #264653;
+  color: white;
+}

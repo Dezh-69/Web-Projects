@@ -1,0 +1,39 @@
+Changes:
+
+Added:
+
+function logout() in Script.js
+
+remarksCreation.js
+
+remarksCreationProcess.php
+
+createRemark in processTest() function
+
+createRemark in studentLogin() function
+
+remarksHistory.html
+
+remarksHistory CSS elements in studentPage.css
+
+added jQuery on clicks for remakrsHistory and Pagination
+
+
+Changed:
+
+loginStudentProcess:
+refractored PHP file to properly create sessions
+echoes json_encode instead of a string that needs to be split
+
+studentLogin() function in script.js:
+refractored function to be able to use json from the loginStudentProcess
+added userID in getting the response from loginStudentProcess
+refractored errors that show in the function
+
+loadPage() function:
+added userID
+
+Script.js:
+added userID
+added remarksHistory variable to check if the user is already there or if they can currently access it
+

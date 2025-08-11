@@ -1,0 +1,218 @@
+/* summaryClass.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px 40px;
+}
+
+.header {
+    background-color: #00796b;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.header h1 i {
+    margin-right: 10px;
+}
+
+.header .subtitle {
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-top: 6px;
+}
+
+.filters-section {
+    margin-bottom: 25px;
+}
+
+.filters-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px 25px;
+}
+
+.filters-card h3 {
+    color: #00796b;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.filters-card h3 i {
+    margin-right: 8px;
+}
+
+.filters-form .form-group {
+    margin-bottom: 15px;
+}
+
+.filters-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #00796b;
+}
+
+.filters-form input[type="text"],
+.filters-form input[type="date"],
+.filters-form select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.filters-form input[type="text"]:focus,
+.filters-form input[type="date"]:focus,
+.filters-form select:focus {
+    border-color: #00796b;
+    outline: none;
+}
+
+.filter-btn {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn i {
+    font-size: 1.1rem;
+}
+
+.filter-btn:hover {
+    background-color: #004d40;
+}
+
+.stats-overview {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 1 1 180px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.stat-icon {
+    background-color: #00796b;
+    color: white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.stat-content h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #00796b;
+}
+
+.stat-content p {
+    margin: 0;
+    font-weight: 500;
+    color: #555;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.chart-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+}
+
+.chart-card.full-width {
+    grid-column: 1 / -1;
+    height: 400px;
+}
+
+.chart-header {
+    color: #00796b;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.chart-header i {
+    margin-right: 10px;
+}
+
+.chart-container {
+    flex: 1;
+    position: relative;
+}
+
+/* Scrollbar styling for better UI (optional) */
+.filters-section, .stats-overview, .charts-grid {
+    scrollbar-width: thin;
+    scrollbar-color: #00796b #e0e0e0;
+}
+
+.filters-section::-webkit-scrollbar, 
+.stats-overview::-webkit-scrollbar, 
+.charts-grid::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+.filters-section::-webkit-scrollbar-thumb, 
+.stats-overview::-webkit-scrollbar-thumb, 
+.charts-grid::-webkit-scrollbar-thumb {
+    background-color: #00796b;
+    border-radius: 3px;
+}
